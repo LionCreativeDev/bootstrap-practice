@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App 1</title>
+
+    <link rel="stylesheet" href="assets/css/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!--<style>
+        .bg-mygradient {
+            background: rgb(232, 214, 254);
+            background: linear-gradient(0deg, rgba(232, 214, 254, 1) 0%, rgba(255, 237, 223, 1) 79%);
+        }
+
+        .bg-white {
+            background-color: white;
+        }
+
+        .mywidth {
+            width: 24%;
+        }
+
+        .recentlyplayedimg{
+            width: 7.3%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .mywidth {
+                width: 80%;
+            }
+
+            .recentlyplayedimg{
+                width: 17.1%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) and (min-width: 600px)  {
+            .mywidth {
+                width: 80%;
+            }
+
+            .recentlyplayedimg{
+                width: 17.1%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 992px) {
+            .mywidth {
+                width: 80%;
+            }
+
+            .recentlyplayedimg{
+                width: 15.5%;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .mywidth {
+                width: 60%;
+            }
+
+            .recentlyplayedimg{
+                width: 13%;
+            }
+        }
+    </style>-->
+</head>
+
+<body>
+
+    <section>
+        <div class="container-xxl">
+
+            <div class="row">
+                <!--left sidebar-->
+                <div class="col-2 col-sm-1 col-md-2">
+                    <div class="top-menu mt-3">
+                        <ul class="list-group">
+                            <li
+                                class="list-group-item border-0 d-flex justify-content-center justify-content-md-start py-1">
+                                <i class="bi bi-house"></i><span class="ms-4 d-none d-md-block">Home</span>
+                            </li>
+                            <li
+                                class="list-group-item border-0 d-flex justify-content-center justify-content-md-start py-1">
+                                <i class="bi bi-columns-gap"></i><span class="ms-4 d-none d-md-block">Browse</span>
+                            </li>
+                            <li
+                                class="list-group-item border-0 d-flex justify-content-center justify-content-md-start py-1">
+                                <i class="bi bi-file-earmark-music"></i><span
+                                    class="ms-4 d-none d-md-block">Albums</span>
+                            </li>
+                            <li
+                                class="list-group-item border-0 d-flex justify-content-center justify-content-md-start py-1">
+                                <i class="bi bi-person"></i><span class="ms-4 d-none d-md-block">Artist</span>
+                            </li>
+                            <li
+                                class="list-group-item border-0 d-flex justify-content-center justify-content-md-start py-1">
+                                <i class="bi bi-camera-video"></i><span class="ms-4 d-none d-md-block">Videos</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-3">
+                        <p class="lead ms-3 mb-0 d-none d-md-block">MY MUSIC</p>
+                        <ul class="list-group">
+                            <li
+                                class="list-group-item border-0 d-flex justify-content-center justify-content-md-start py-1">
+                                <i class="bi bi-alarm"></i><span class="ms-4 d-none d-md-block">Recently Played</span>
+                            </li>
+                            <li
+                                class="list-group-item border-0 d-flex justify-content-center justify-content-md-start py-1">
+                                <i class="bi bi-file-earmark"></i><span class="ms-4 d-none d-md-block">Local
+                                    Files</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-3 d-none d-md-block">
+                        <p class="lead ms-3 mb-0">Playlist</p>
+                        <ul class="list-group">
+                            <li class="list-group-item border-0 d-flex">
+                                <span class="me-4">Playlist 1</span>
+                            </li>
+                            <li class="list-group-item border-0 d-flex">
+                                <span class="me-4">Playlist 2</span>
+                            </li>
+                            <li class="list-group-item border-0 d-flex">
+                                <span class="me-4">Playlist 3</span>
+                            </li>
+                            <li class="list-group-item border-0 d-flex">
+                                <span class="me-4">Playlist 4</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-3 d-none d-md-block">
+                        <img src="assets/images/Boom.png" class="img-fluid w-100" alt="offer">
+                    </div>
+                </div>
+
+                <!--Main area-->
+                <div class="col-10 col-sm-11 col-md-10 bg-mygradient">
+
+                    <!--top searchbar-->
+                    <div class="row justify-content-between align-items-center px-2 px-sm-4">
+                        <div class="col-3 col-sm-5 col-md-3 d-flex align-items-center py-3">
+                            <i class="bi bi-grid-fill"></i>
+                            <div class="input-group shadow ms-4 d-none d-sm-flex">
+                                <span class="input-group-text border-0 bg-white text-danger" id="search"><i
+                                        class="bi bi-search"></i></span>
+                                <input type="text" class="form-control border-0" placeholder="Search"
+                                    aria-label="Search" aria-describedby="search">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-md-2 py-3 ms-auto" style="border-right: 1px solid #cccccc;">
+                            <i
+                                class="bi bi-person-fill px-2 py-1 fs-5 rounded-circle bg-mygradient border border-white"></i>
+
+                            <span class="fw-bold mx-sm-2">Farzan</span>
+                            <i class="bi bi-caret-down px-1 rounded-circle border border-dark"></i>
+                        </div>
+                        <div class="col-3 col-sm-2 col-md-1 d-flex justify-content-between ps-3">
+                            <i class="bi bi-bell fs-5"></i>
+                            <i class="bi bi-gear fs-5"></i>
+                        </div>
+                    </div>
+                    <!--top searchbar-->
+
+                    <div class="row justify-content-between align-items-center px-2 px-sm-4 pt-2 pt-md-2 mb-2">
+                        <div class="col-9 col-sm-10 col-md-3 d-flex align-items-center">
+                            <h2>Top Artist</h2><span class="text-muted ms-3">- Top 50</span>
+                        </div>
+                        <div class="col-3 col-sm-2 col-md-1 d-flex justify-content-between">
+                            <i class="bi bi-chevron-left bg-white shadow px-1"></i>
+                            <i class="bi bi-chevron-right bg-white shadow px-1"></i>
+                        </div>
+                    </div>
+
+                    <div class="row px-2 px-sm-4">
+                        <div class="col mb-3">
+                            <img src="/Music_App_1/assets/images/albums/Jennifer_Hudson_-_Jennifer_Hudson_(album).png"
+                                class="w-100 img-fluid rounded-4 shadow mb-2" alt="">
+                            <p class="fw-bold mb-0">Stoney</p>
+                            <small class="text-muted">Post Malone</small>
+                        </div>
+                        <div class="col mb-3 d-none d-sm-block">
+                            <img src="/Music_App_1/assets/images/albums/LustForLife.Explicit.png"
+                                class="w-100 img-fluid rounded-4 shadow mb-2" alt="">
+                            <p class="fw-bold mb-0">Blue Neighbour</p>
+                            <small class="text-muted">Troye Silvin</small>
+                        </div>
+                        <div class="col mb-3 d-none d-sm-block">
+                            <img src="/Music_App_1/assets/images/albums/You_Can_Dance_Madonna.png"
+                                class="w-100 img-fluid rounded-4 shadow mb-2" alt="">
+                            <p class="fw-bold mb-0">Robbery</p>
+                            <small class="text-muted">Juice world</small>
+                        </div>
+                        <div class="col mb-3 d-none d-sm-block">
+                            <img src="/Music_App_1/assets/images/albums/You_Could_Be_Mine_(Guns_N'_Roses_single).png"
+                                class="w-100 img-fluid rounded-4 shadow mb-2" alt="">
+                            <p class="fw-bold mb-0">The Greatest</p>
+                            <small class="text-muted">Kate Hudson</small>
+                        </div>
+                        <div class="col mb-3 d-none d-sm-block">
+                            <img src="/Music_App_1/assets/images/albums/Jennifer_Hudson_-_Jennifer_Hudson_(album).png"
+                                class="w-100 img-fluid rounded-4 shadow mb-2" alt="">
+                            <p class="fw-bold mb-0">Bank Account</p>
+                            <small class="text-muted">21 Savings</small>
+                        </div>
+                    </div>
+
+
+                    <!--Now Playing & Recently Played-->
+                    <div class="row px-2 px-sm-4">
+
+                        <!--Now Playing-->
+                        <div class="col-12 col-sm-5">
+                            <div class="rounded-4 shadow p-4 bg-white text-center mb-2">
+                                <small class="d-flex mx justify-content-end">
+                                    Next - <p class="fw-bold mb-2">Rockstar</p>
+                                </small>
+
+                                <img src="/Music_App_1/assets/images/albums/Jennifer_Hudson_-_Jennifer_Hudson_(album).png"
+                                    class="img-fluid rounded shadow mb-2 mywidth mx-auto" alt="">
+
+                                <p class="fw-bold mb-0">Stoney</p>
+                                <small class="text-muted">Post Malone</small>
+
+                                <div class="w-100 pt-2 px-md-4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="range" id="seek-slider" max="100" value="0" class="w-100">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-between">
+                                                <small class="text-muted">2:40</small>
+                                                <small class="text-muted">-3:56</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 d-flex align-items-center justify-content-between">
+                                            <i class="bi bi-shuffle fs-5"></i>
+                                            <i class="bi bi-skip-backward fs-5"></i>
+                                            <i class="bi bi-play-circle fs-1"></i>
+                                            <i class="bi bi-skip-forward fs-5"></i>
+                                            <i class="bi bi-repeat fs-5"></i>
+                                        </div>
+                                        <!--<div class="col ps-0">
+                                            <i class="bi bi-shuffle fs-5"></i>
+                                        </div>
+                                        <div class="col">
+                                            <i class="bi bi-skip-backward fs-5"></i>
+                                        </div>
+                                        <div class="col">
+                                            <i class="bi bi-play-circle fs-1"></i>
+                                        </div>
+                                        <div class="col">
+                                            <i class="bi bi-skip-forward fs-5"></i>
+                                        </div>
+                                        <div class="col pe-0">
+                                            <i class="bi bi-repeat fs-5"></i>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Now Playing-->
+
+                        <!--Recently Played-->
+                        <div class="col-12 col-sm-7">
+
+                            <div
+                                class="rounded-4 shadow d-flex justify-content-around align-items-center py-2 bg-white mb-2">
+                                <small class="fw-bold">01</small>
+                                <img class="img-fluid rounded shadow recentlyplayedimg"
+                                    src="/Music_App_1/assets/images/albums/Jennifer_Hudson_-_Jennifer_Hudson_(album).png"
+                                    alt="">
+                                <i class="bi bi-play"></i>
+
+                                <p class="fw-bold mb-0">Rockstar</p>
+                                <small class="text-muted d-none d-md-block">Post Malone</small>
+
+                                <small class="text-muted">4:30</small>
+                                <i class="bi bi-activity text-primary"></i>
+                            </div>
+
+                            <div
+                                class="rounded-4 shadow d-flex justify-content-around align-items-center py-2 bg-white mb-2">
+                                <small class="fw-bold">02</small>
+                                <img class="img-fluid rounded shadow recentlyplayedimg"
+                                    src="/Music_App_1/assets/images/albums/Jennifer_Hudson_-_Jennifer_Hudson_(album).png"
+                                    alt="">
+                                <i class="bi bi-play"></i>
+
+                                <p class="fw-bold mb-0">Rockstar</p>
+                                <small class="text-muted d-none d-md-block">Post Malone</small>
+
+                                <small class="text-muted">4:30</small>
+                                <i class="bi bi-activity text-primary"></i>
+                            </div>
+
+                            <div
+                                class="rounded-4 shadow d-flex justify-content-around align-items-center py-2 bg-white mb-2">
+                                <small class="fw-bold">03</small>
+                                <img class="img-fluid rounded shadow recentlyplayedimg"
+                                    src="/Music_App_1/assets/images/albums/Jennifer_Hudson_-_Jennifer_Hudson_(album).png"
+                                    alt="">
+                                <i class="bi bi-play"></i>
+
+                                <p class="fw-bold mb-0">Rockstar</p>
+                                <small class="text-muted d-none d-md-block">Post Malone</small>
+
+                                <small class="text-muted">4:30</small>
+                                <i class="bi bi-activity text-primary"></i>
+                            </div>
+
+                            <div
+                                class="rounded-4 shadow d-flex justify-content-around align-items-center py-2 bg-white mb-2">
+                                <small class="fw-bold">04</small>
+                                <img class="img-fluid rounded shadow recentlyplayedimg"
+                                    src="/Music_App_1/assets/images/albums/Jennifer_Hudson_-_Jennifer_Hudson_(album).png"
+                                    alt="">
+                                <i class="bi bi-play"></i>
+
+                                <p class="fw-bold mb-0">Rockstar</p>
+                                <small class="text-muted d-none d-md-block">Post Malone</small>
+
+                                <small class="text-muted">4:30</small>
+                                <i class="bi bi-activity text-primary"></i>
+                            </div>
+
+                            <div
+                                class="rounded-4 shadow d-flex justify-content-around align-items-center py-2 bg-white mb-2">
+                                <small class="fw-bold">05</small>
+                                <img class="img-fluid rounded shadow recentlyplayedimg"
+                                    src="/Music_App_1/assets/images/albums/Jennifer_Hudson_-_Jennifer_Hudson_(album).png"
+                                    alt="">
+                                <i class="bi bi-play"></i>
+
+                                <p class="fw-bold mb-0">Rockstar</p>
+                                <small class="text-muted d-none d-md-block">Post Malone</small>
+
+                                <small class="text-muted">4:30</small>
+                                <i class="bi bi-activity text-primary"></i>
+                            </div>
+
+                        </div>
+                        <!--Recently Played-->
+
+                    </div>
+                </div>
+                <!--Main area-->
+            </div>
+
+        </div>
+    </section>
+
+    <script src="assets/js/cdn.jsdelivr.net_npm_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
+    <script src="assets/js/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.min.js"></script>
+</body>
+
+</html>

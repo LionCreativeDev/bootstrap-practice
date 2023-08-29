@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App 2</title>
+
+    <link rel="stylesheet" href="assets/css/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body class="bg-light">
+
+    <!--Nav goes here-->
+    <nav class="navbar navbar-expand-lg bg-white shadow">
+        <div class="container-xxl mx-sm-2 mx-xl-5 py-3">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-file-earmark-music py-2 px-3 rounded-3 bg-my-blue text-white"></i> Music
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-sm-center">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active" aria-current="page" href="#">Browse</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">My Music</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">Radio</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">More</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-lg-block">
+                        <a class="btn btn-success btn-sm bg-my-green rounded-pill border-0" href="#">Go PRO</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto align-items-sm-center">
+                    <li class="nav-item dropdown ms-2 ms-sm-0">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Polish</a></li>
+                            <li><a class="dropdown-item" href="#">Germon</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-2 ms-sm-0">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item ms-2 ms-sm-0">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Nav goes here-->
+
+    <section class="container-xl">
+        <div class="row pt-5 pb-3 px-md-4 px-lg-0"> <!--py-5-->
+            <div class="col-md-4 py-3">
+                <div class="card rounded-5">
+                    <div class="card-body bg-my-blue rounded-5">
+                        <div class="row">
+                            <div class="col-6 col-md-12 col-lg-6 position-relative">
+                                <img src="assets/images/radio.png" class="position-absolute rotate-10 img-radio"
+                                    alt="Radio Image">
+                            </div>
+                            <div class="col-6 col-md-12 col-lg-6 ps-0 pt-md-5 pt-lg-0">
+                                <div class="d-flex flex-column text-white py-3 py-md-0 py-lg-3">
+                                    <p class="fw-bold lead mb-2">Radio</p>
+                                    <small>Pick a mood, song, or artist.</small>
+                                    <small>We'll play the perfect mix!</small>
+                                    <a href="#"
+                                        class="btn btn-danger btn-sm bg-my-pink rounded-pill mt-2 w-75 mx-auto">Listen
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 py-3">
+                <div class="d-flex justify-space-between mx-sm-5 position-relative"> <!--w-75 mx-auto-->
+                    <i class="bi bi-search search-icon"></i>
+                    <input type="text" class="form-control me-2 me-sm-4 search-input" placeholder="Search for song">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+                <div class="row pt-4 d-flex align-items-center justify-content-between">
+                    <div class="col col-sm-1 px-0">
+                        <div class="round-btn me-auto">
+                            <i class="bi bi-arrow-left p-2 rounded-5 bg-my-blue text-white"></i>
+                        </div>
+                    </div>
+                    <div class="col-8 col-sm-10 px-0">
+                        <!--<div class="row">
+                            <div class="col">
+                                <div class="slider-div rounded-3 shadow d-flex justify-content-center align-items-center"
+                                    style="background-image: url('https://www.spruko.com/demo/nixlot/HTML/assets/img/users/female/1.jpg');">
+                                    <div class="btn btn-sm rounded-3 bg-my-white text-sm text-white">
+                                        Lisa Lee
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="slider-div rounded-3 shadow d-flex justify-content-center align-items-center"
+                                    style="background-image: url('https://www.spruko.com/demo/nixlot/HTML/assets/img/users//male/11.jpg');">
+                                    <div class="btn btn-sm rounded-3 bg-my-white text-sm text-white">
+                                        James Dyer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-none d-sm-block">
+                                <div class="slider-div rounded-3 shadow d-flex justify-content-center align-items-center"
+                                    style="background-image: url('https://www.spruko.com/demo/nixlot/HTML/assets/img/users//male/2.jpg');">
+                                    <div class="btn btn-sm rounded-3 bg-my-white text-sm text-white">
+                                        Matt Scot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-none d-sm-block">
+                                <div class="slider-div rounded-3 shadow d-flex justify-content-center align-items-center"
+                                    style="background-image: url('https://www.spruko.com/demo/nixlot/HTML/assets/img/users/female/3.jpg');">
+                                    <div class="btn btn-sm rounded-3 bg-my-white text-sm text-white">
+                                        Audrey
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+
+                        <div class="row">
+                            <div class="col-6 col-sm-3">
+                                <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                                    <img src="https://www.spruko.com/demo/nixlot/HTML/assets/img/users/female/1.jpg" class="img-fluid rounded-3 w-100 h-100">
+                                    <div class="position-absolute btn btn-sm rounded-3 bg-my-white text-sm text-white">
+                                        Lisa Lee
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                                    <img src="https://www.spruko.com/demo/nixlot/HTML/assets/img/users//male/11.jpg" class="img-fluid rounded-3 w-100 h-100">
+                                    <div class="position-absolute btn btn-sm rounded-3 bg-my-white text-sm text-white">
+                                        James Dyer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 d-none d-sm-block">
+                                <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                                    <img src="https://www.spruko.com/demo/nixlot/HTML/assets/img/users//male/2.jpg" class="img-fluid rounded-3 w-100 h-100">
+                                    <div class="position-absolute btn btn-sm rounded-3 bg-my-white text-sm text-white">
+                                        Matt Scot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 d-none d-sm-block">
+                                <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                                    <img src="https://www.spruko.com/demo/nixlot/HTML/assets/img/users/female/3.jpg" class="img-fluid rounded-3 w-100 h-100">
+                                    <div class="position-absolute btn btn-sm rounded-3 bg-my-white text-sm text-white">
+                                        Audrey
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col col-sm-1 px-0">
+                        <div class="round-btn ms-auto">
+                            <i class="bi bi-arrow-right p-2 rounded-5 bg-my-blue text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-xxl">
+        <div class="row px-sm-2 px-xl-5 bg-white weeklyTop">
+            <div class="col-md-4 col-lg-3 h-100 border-right-2 borderTop borderRight">
+                <p class="lead fw-bold w-100 text-center pt-3">Weely Top 15</p>
+                <ul class="w-100 ps-0 mb-0">
+                    <li class="weekTopSongs">
+                        <div class="w-100 d-flex mx-0">
+                            <div>
+                                <i class="bi bi-play-circle bigPlayIcon mx-2"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                                <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="weekTopSongs">
+                        <div class="w-100 d-flex mx-0">
+                            <div>
+                                <i class="bi bi-play-circle bigPlayIcon mx-2"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                                <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="weekTopSongs">
+                        <div class="w-100 d-flex mx-0">
+                            <div>
+                                <i class="bi bi-play-circle bigPlayIcon mx-2"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                                <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="weekTopSongs">
+                        <div class="w-100 d-flex mx-0">
+                            <div>
+                                <i class="bi bi-play-circle bigPlayIcon mx-2"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                                <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="weekTopSongs">
+                        <div class="w-100 d-flex mx-0">
+                            <div>
+                                <i class="bi bi-play-circle bigPlayIcon mx-2"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                                <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="weekTopSongs">
+                        <div class="w-100 d-flex mx-0">
+                            <div>
+                                <i class="bi bi-play-circle bigPlayIcon mx-2"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                                <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="weekTopSongs">
+                        <div class="w-100 d-flex mx-0">
+                            <div>
+                                <i class="bi bi-play-circle bigPlayIcon mx-2"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                                <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="weekTopSongs">
+                        <div class="w-100 d-flex mx-0">
+                            <div>
+                                <i class="bi bi-play-circle bigPlayIcon mx-2"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                                <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                            </div>
+                        </div>
+                    </li>
+                    <!--<li class="weekTopSongs">
+                        <div class="w-100 d-flex mx-0">
+                            <div>
+                                <i class="bi bi-play-circle bigPlayIcon mx-2"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                                <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="weekTopSongs">
+                        <div class="w-100 d-flex mx-0">
+                            <div>
+                                <i class="bi bi-play-circle bigPlayIcon mx-2"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                                <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                            </div>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="col-md-8 col-lg-9 borderTop d-flex flex-column justify-content-between">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex p-2 align-items-center">
+                        <p class="lead fw-bold mb-0">New Release</p>
+                        <button class="btntransparent rounded-pill mb-0 ms-2 px-3">More</button>
+                    </div>
+
+                    <div class="d-flex p-2">
+                        <div class="round-btn">
+                            <i class="bi bi-arrow-left p-2 rounded-5 bg-my-blue text-white me-3"></i>
+                        </div>
+                        <div class="round-btn">
+                            <i class="bi bi-arrow-right p-2 rounded-5 bg-my-blue text-white ms-3"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row px-2 py-2 py-md-4">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/1.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/2.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/3.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/4.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/5.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/6.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                <!--</div>
+
+                <div class="row px-2 pt-2 pt-md-4 pb-sm-5">-->
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/7.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/8.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/9.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/10.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/11.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 mb-sm-2 mb-md-5">
+                        <div class="rounded-3 shadow d-flex justify-content-center align-items-center">
+                            <img src="/Music_App_2/assets/images/albums/12.jpg" class="img-fluid rounded-3 w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row borderTop py-2 py-md-0">
+                    <div class="col-12 col-sm-4 d-flex">
+                        <div class="align-self-center mx-auto mx-sm-0">
+                            <p class="fw-bold mb-0">Solo (feat, Demi Lovato)</p>
+                            <small class="text-muted">Solo (feat, Demi Lovato)</small>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="w-100 d-flex align-items-center justify-content-between px-2 px-sm-0 py-2">
+                            <i class="bi bi-shuffle fs-5"></i>
+                            <i class="bi bi-skip-backward fs-5"></i>
+                            <i class="bi bi-play-circle fs-1"></i>
+                            <i class="bi bi-skip-forward fs-5"></i>
+                            <i class="bi bi-repeat fs-5"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4 d-flex">
+                        <div class="d-flex align-items-center justify-content-end my-auto">
+                            <small class="text-muted mb-0 me-2">2:12</small>
+                            <img src="/Music_App_2/assets/images/bars.png" alt="" class="img-fluid w-50">
+                            <small class="text-muted mb-0 ms-2">4:37</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/cdn.jsdelivr.net_npm_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
+    <script src="assets/js/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.min.js"></script>
+
+    <script>
+        const elDivs = document.querySelectorAll(".weekTopSongs");
+
+        const toggleClassDivs = (evt) => {
+            const isEnter = evt.type === "mouseenter";
+
+            let el = evt.target;
+            if (isEnter)
+                el.classList.add("card", "shadow", "hover");
+            else
+                el.classList.remove("card", "shadow", "hover");
+        };
+
+        elDivs.forEach(el => {
+            el.addEventListener("mouseenter", toggleClassDivs);
+            el.addEventListener("touchstart", toggleClassDivs);
+
+            el.addEventListener("mouseleave", toggleClassDivs);
+            el.addEventListener("touchend", toggleClassDivs);
+        });
+    </script>
+</body>
+
+</html>

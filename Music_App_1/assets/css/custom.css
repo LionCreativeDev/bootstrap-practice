@@ -1,0 +1,56 @@
+.bg-mygradient {
+    background: rgb(232, 214, 254);
+    background: linear-gradient(0deg, rgba(232, 214, 254, 1) 0%, rgba(255, 237, 223, 1) 79%);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.mywidth {
+    width: 24%;
+}
+
+.recentlyplayedimg{
+    width: 7.3%;
+}
+
+@media only screen and (max-width: 600px) {
+    .mywidth {
+        width: 80%;
+    }
+
+    .recentlyplayedimg{
+        width: 17.1%;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px)  {
+    .mywidth {
+        width: 80%;
+    }
+
+    .recentlyplayedimg{
+        width: 17.1%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .mywidth {
+        width: 80%;
+    }
+
+    .recentlyplayedimg{
+        width: 15.5%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .mywidth {
+        width: 60%;
+    }
+
+    .recentlyplayedimg{
+        width: 13%;
+    }
+}
